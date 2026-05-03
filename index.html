@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ETA ETA ETA — O Musical</title>
+    <meta property="og:title" content="ETA ETA ETA — O Musical" />
+    <meta property="og:description" content="Uma noite. Um elenco. Um som incontrolável. (Isto também é uma festa de aniversário.)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="COLE_AQUI_A_URL_DO_VERCEL/img/logo-fundo.PNG" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- SEÇÃO 1 — HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <img
+          src="img/logo-sem-fundo.PNG"
+          alt="ETA ETA ETA Logo"
+          class="hero__logo"
+        />
+
+        <p class="hero__subtitle">
+          Uma noite. Um elenco. Um som incontrolável.
+        </p>
+        <a href="#formulario" class="btn-cta">GARANTIR MINHA VAGA NO ELENCO</a>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2 — SINOPSE -->
+    <section class="sinopse" id="sinopse">
+      <div class="container">
+        <h2 class="section-title">AUDIÇÕES ABERTAS</h2>
+        <div class="sinopse__divider"></div>
+        <p class="sinopse__text">
+          Os maiores nomes do teatro musical mundial foram convidados para esta
+          audição histórica. Nenhum respondeu. A produção tomou uma decisão
+          corajosa:
+        </p>
+        <p class="sinopse__destaque">mandamos o link pra você.</p>
+        <p class="sinopse__parenteses">
+          (Isto também é uma festa de aniversário.)
+        </p>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3 — DETALHES DO EVENTO -->
+    <section class="detalhes" id="detalhes">
+      <div class="detalhes__overlay"></div>
+      <div class="container detalhes__content">
+        <h2 class="section-title">QUANDO &amp; ONDE</h2>
+        <div class="sinopse__divider"></div>
+        <div class="detalhes__grid">
+          <div class="detalhe-item">
+            <span class="detalhe-item__icon">📍</span>
+            <div>
+              <p class="detalhe-item__label">Local</p>
+              <p class="detalhe-item__value">Rancho Route 44</p>
+              <p class="detalhe-item__sub">Rua Nyo Miyashiro, 5-44</p>
+            </div>
+          </div>
+          <div class="detalhe-item">
+            <span class="detalhe-item__icon">📅</span>
+            <div>
+              <p class="detalhe-item__label">Data</p>
+              <p class="detalhe-item__value">3 de junho de 2026</p>
+            </div>
+          </div>
+          <div class="detalhe-item">
+            <span class="detalhe-item__icon">🕘</span>
+            <div>
+              <p class="detalhe-item__label">Horário</p>
+              <p class="detalhe-item__value">21h</p>
+              <p class="detalhe-item__sub">
+                pontualidade é opcional, presença é obrigatória
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 4 — CHAMADA PRO FORMULÁRIO -->
+    <section class="chamada" id="chamada">
+      <div class="container">
+        <p class="chamada__quote">
+          "Esta não é uma festa comum. Esta é uma audição."
+        </p>
+        <p class="chamada__texto">
+          Talentos de todos os níveis são bem-vindos.
+        </p>
+        <p class="chamada__texto">Afinação, opcional.</p>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 5 — FORMULÁRIO -->
+    <section class="formulario-section" id="formulario">
+      <div class="formulario__overlay"></div>
+      <div class="container formulario__content">
+        <h2 class="section-title">FICHA DE INSCRIÇÃO</h2>
+        <div class="sinopse__divider"></div>
+        <p class="formulario__subtitulo">
+          Preencha com cuidado. Sua vaga no elenco depende disso.
+        </p>
+
+        <form id="rsvp-form" class="form" novalidate>
+          <div class="form__group">
+            <label class="form__label" for="nome">Nome artístico</label>
+            <input
+              class="form__input"
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="ou o que sua mãe te deu"
+              required
+            />
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="celular">Celular</label>
+            <input
+              class="form__input"
+              type="tel"
+              id="celular"
+              name="celular"
+              placeholder="(xx) xxxxx-xxxx"
+              required
+            />
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="acompanhante"
+              >Vai levar alguém?</label
+            >
+            <select
+              class="form__select"
+              id="acompanhante"
+              name="acompanhante"
+              required
+            >
+              <option value="" disabled selected>Selecione...</option>
+              <option value="Sim">Sim</option>
+              <option value="Não">Não</option>
+              <option value="Ainda em negociação">Ainda em negociação</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="vocal">Classificação vocal</label>
+            <select class="form__select" id="vocal" name="vocal" required>
+              <option value="" disabled selected>Selecione...</option>
+              <option value="Soprano">Soprano</option>
+              <option value="Mezzo-soprano">Mezzo-soprano</option>
+              <option value="Contralto">Contralto</option>
+              <option value="Tenor">Tenor</option>
+              <option value="Barítono">Barítono</option>
+              <option value="Baixo">Baixo</option>
+              <option value="Canto no banho">Canto no banho</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="musica"
+              >Música que você ensaiou no chuveiro</label
+            >
+            <input
+              class="form__input"
+              type="text"
+              id="musica"
+              name="musica"
+              placeholder="seja honesto(a)"
+            />
+          </div>
+
+          <button class="btn-submit" type="submit" id="submit-btn">
+            CONFIRMAR PRESENÇA NO ELENCO
+          </button>
+        </form>
+
+        <div class="confirmacao" id="confirmacao" hidden>
+          <p class="confirmacao__texto">
+            Sua ficha foi recebida. A produção entrará em contato. Ou não. O
+            show acontece de qualquer forma. Te aguardo lá.
+          </p>
+        </div>
+
+        <div class="erro" id="erro-msg" hidden>
+          <p>Algo deu errado. Tenta de novo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 6 — RODAPÉ -->
+    <footer class="footer" id="footer">
+      <div class="container footer__content">
+        <img
+          src="img/logo-sem-fundo.PNG"
+          alt="ETA ETA ETA Logo"
+          class="footer__logo"
+        />
+        <p class="footer__texto">
+          Produzido por Igor com recursos próprios, força de vontade e um grupo
+          de WhatsApp.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
